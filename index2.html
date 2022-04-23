@@ -7,11 +7,55 @@
     <title>parallax scrolling 2</title>
 
     <style>
-
+        body {
+            margin: 0;
+            bottom: 0;
+        }
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+        }
+        h1{
+            background-color: #fff;
+            font-weight: bold;
+            border-radius: 20px;
+            line-height: 1;
+            padding: 10px;
+        }
+        section:nth-child(1){
+            background-image: url(https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
+            block-size: cover;
+        }
+        section:nth-child(2){
+            background-color:darkgreen;
+        }
+        section:nth-child(3){
+            background-image: url(https://images.unsplash.com/photo-1650634179095-cac904c35b63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+            background-size: cover;
+            background-position: 0 30%;
+            background-attachment: fixed;
+        }
+        section:nth-child(4){
+            background-color: brown;
+        }
     </style>
 </head>
 <body>
-    
+    <section>
+        <h1>DIV1</h1>
+    </section>
+    <section>
+        <h1>DIV2</h1>
+    </section>
+    <section>
+        <h1>DIV3</h1>
+    </section>
+    <section>
+        <h1>DIV4</h1>
+    </section>
     <script src="script2.js"></script>
 </body>
 </html>
